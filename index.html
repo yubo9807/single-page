@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/vue-reactivity.js"></script>
+  <script defer src="./js/page-home.js"></script>
+  <script defer src="./js/page-about.js"></script>
+  <script defer src="./js/router.js"></script>  <!-- 路由一定放在最后 -->
+</head>
+<body>
+
+  <!-- 首页 -->
+  <div class="page page-home">
+    <div>
+      响应式数据：
+      <span class="demo"></span>
+      <button class="btn">click</button>
+    </div>
+    <button class="to-about">to About</button>
+    
+  </div>
+
+  <!-- 关于页 -->
+  <div class="page page-about">
+    关于我
+    <div>
+      <button class="to-home">to Home</button>
+    </div>
+  </div>
+
+</body>
+</html>
