@@ -28,7 +28,7 @@ router.push('/about');
 ## 响应式数据：
 
 ```js
-const { ref, reactive, autoRun } = vue;
+const { ref, reactive, binding } = vue;
 
 // 1. 声明：vue.ref 或 vue.reactive；
 const a = ref(0);  // 可传任意数据类型
@@ -38,7 +38,7 @@ const arr = reactive([0]);  // 可传数组或对象
 arr[0] = 1;                 // 改变数据
 
 // 2. 绑定自动更新对象：
-autoRun(() => {        // 函数中的代码会在数据发生改变时自动运行
+binding(() => {        // 函数中的代码会在数据发生改变时自动运行
   el.innerText = a.value;  // 这里可以绑定任何对象：style class dom 等
 })
 ```
