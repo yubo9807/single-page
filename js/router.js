@@ -9,8 +9,8 @@
     { path: '/about', className: 'page-about', func: pageAbout },
   ]
 
-  const { createRouter, useRoute, watch } = vue;
-  createRouter({ mode: 'hash' });
+  const { initRouter, useRoute, watch } = vue;
+  initRouter({ mode: 'hash' });
 
   const pages = document.getElementsByClassName('page');
   let backupPages = [...pages].map(node => node.cloneNode(true));

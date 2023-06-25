@@ -1,13 +1,13 @@
 function pageHome() {
 
   // 响应式数据
-  const { autoRun, ref, watch } = vue;
+  const { binding, ref, watch } = vue;
 
   const el = document.getElementsByClassName('demo')[0];
   const count = ref(0);
 
   // 这里的函数只要包含有响应式数据，数据一但改动就会自动运行
-  autoRun(() => {
+  binding(() => {
     el.innerText = count.value;
   })
 
